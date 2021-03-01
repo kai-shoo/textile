@@ -1,0 +1,33 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 132px;
+
+  @media (min-width: 500px) {
+    max-width: 209px;
+  }
+}
+
+.product__image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product__image-wrapper {
+  width: 132px;
+  height: 132px;
+  margin-bottom: 6px;
+  overflow: hidden;
+
+  @media (min-width: 500px) {
+    width: 209px;
+    height: 209px;
+    margin-bottom: 11px;
+  }
+}
+.product:hover .product__image,
+.product:focus-within .product__image {
+  transform: scale(1.3);
+}
