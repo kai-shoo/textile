@@ -167,11 +167,13 @@ a {
 @media (min-width: 1305px) {
   .catalog {
     padding: 40px 0;
-    align-items: center;
+    align-content: space-between;
   }
   .catalog::before {
     content: url('../img/TEX_2.jpg');
-    display: flex;
+    display: block;
+    width: 430px;
+    height: 565px;
     grid-column: span 2;
     grid-row: span 2;
   }
@@ -223,6 +225,11 @@ a {
     font-size: 12px;
   }
 }
+@media (min-width: 1305px) {
+  .nav {
+    padding-top: 40px;
+  }
+}
 .nav__list {
   list-style: none;
   margin: 0;
@@ -241,6 +248,7 @@ a {
   font-size: 14px;
 }
 .nav__title {
+  margin-top: 0;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
